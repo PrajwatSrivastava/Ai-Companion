@@ -1,0 +1,22 @@
+{
+"manifest_version": 3,
+"name": "Question & Answering Companion",
+"description": "A Chrome extension that help u find relevent answer within no time.",
+"version": "1.0",
+"action": {
+  "default_popup": "popup.html"
+},
+"host_permissions": [
+  "http://127.0.0.1:5000/"
+],
+"permissions": [
+  "activeTab",
+  "scripting"
+],
+"web_accessible_resources": [
+  {
+    "resources": ["popup.js"],
+    "matches": ["http://*/*", "https://*/*"]
+  }
+]
+}
